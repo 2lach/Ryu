@@ -22,3 +22,16 @@ else
   echo "These files failed shellcheck: ${ERRORS[*]}"
   exit 1
 fi
+
+test_shells() {
+  fmt="%s\t%s\n"
+  for shell in "$@"; do
+    if test_shell $shell; then
+      printf $fmt $shell PASS
+    else
+      printf $fmt $shell FAIL
+    fi
+  done
+}
+
+test_shells sh bash dash zsh ksh csh tcsh gosh
