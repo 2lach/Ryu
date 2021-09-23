@@ -19,5 +19,5 @@ if ! _exists rsync; then
   fi
 else
   echo 'rsync exists'
-  echo 'Haduken!'
+  echo 'Hadouken!'
 fi

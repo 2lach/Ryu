@@ -21,6 +21,7 @@ I will not condole any type of violence, hateful behavior, speeches or slurs, no
 
 Todos:
 [x] check if dependencies are installed
+[ ] complete install as binary with ryu_setup.sh 
 [ ] write more tests
 [ ] deploy to homebrew
 [ ] deploy as npm-package
